@@ -6,6 +6,7 @@ import 'package:flutter_exercises/day2/practices/practice_4.dart';
 import 'package:flutter_exercises/day2/practices/practice_5.dart';
 import 'package:flutter_exercises/day2/practices/practice_6.dart';
 import 'package:flutter_exercises/day2/practices/practice_7.dart';
+import 'package:flutter_exercises/day2/practices/practice_8.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +37,10 @@ class MyApp extends StatelessWidget {
         ProfileScreen.routeName: (context) => const ProfileScreen(),
         SettingsScreen.routeName: (context) => const SettingsScreen(),
         // Practice7 end
+        // Practice8 start
+        Practice8.routeName: (context) => const Practice8(),
+        AddTodoScreen.routeName: (context) => AddTodoScreen(),
+        // Practice8 end
       },
     );
   }
@@ -68,7 +73,7 @@ class MenuScreen extends StatelessWidget {
             },
           );
         },
-        itemCount: 7,
+        itemCount: 8,
       ),
     );
   }
